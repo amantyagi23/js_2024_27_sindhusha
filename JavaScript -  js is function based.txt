@@ -1,0 +1,109 @@
+JavaScript - >> js is function based programing language
+
+everything is function-> all the function are wraped under a object
+object -> that has a phy.. identiy on ram
+
+cpu -> ram -> read the task 
+
+
+
+Html ->
+
+hyper text -> link having link 
+markup language -> tag -> h1,h2,p
+static -> 
+
+
+css -> 
+
+Netscape -> breden eich
+
+-> comes with a idea knowns as javascrpt
+
+dynamic programing lang. -> python
+every thing change at run time ->
+
+java
+c,c++
+
+
+js1->
+
+js2->
+2.5->
+
+2003
+
+es -> ecmascript-> 22
+
+es6->
+
+
+console is object which fuction
+
+
+datatypes ->
+every data we have to store 
+bit -> 0 and 1
+
+comb.. of 8bit -> bytes
+
+
+1. number -> 1,2,2.6
+2. string -> "hello world",
+3. Boolean -> 0 or 1 , true or false
+4. BigInt -> for big number 100000000000000000000000
+5. object -> {},in every object -> key : value
+6. null -> null  void area.
+7. undefined -> process but return nothing
+8. symbol -> !,@,%,*
+9. array -> [] comes with index,0 up to the length of array
+
+
+
+
+variable -> 
+key = value;
+
+name of a variable -> 
+it has to start from a string value
+
+examples
+
+-> x = 123;
+-> y = "system"
+-> show = true
+-> show_ = {x:0}
+-> show12 = [0,1,2,4,4]
+
+
+
+types of variable ->
+
+scope ->
+global -> river
+local -> 
+{
+
+}
+
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
