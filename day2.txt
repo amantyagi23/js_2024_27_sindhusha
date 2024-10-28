@@ -1,0 +1,85 @@
+console
+control the screen task
+like to display the output, clear the screen,
+display error
+
+
+log(params) -> this display output which we write in params
+
+console
+
+tony stark -> iron man suit
+
+console.log()
+console.clear()
+console.error()
+
+
+
+
+scope
+variable making
+
+
+var -> 1995 upto today 
+
+var variableName = value;
+var scope -> 
+global ->
+
+
+var -> global now anyone can access it.
+it is at the top 
+
+
+2015 ->  es6
+
+let -> block scope -> local scope
+
+{
+
+} 
+
+-----------------------
+2015-> es6
+const -> constant
+
+
+
+operators ->typeOf
+
+
+question ->
+ 1. create two variable using let and add them into a third variable
+
+question2.
+
+number + string = 
+12 + "hello"
+number - string = 
+Boolean + number = 
+Boolean +string = 
+
+null + number
+
+
+
+question 3 .
+
+create an object of your self ->
+ const sind = {name:}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
