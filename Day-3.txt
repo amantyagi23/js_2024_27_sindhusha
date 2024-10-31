@@ -1,0 +1,166 @@
+Day-3
+
+
+ {
+ key : value,
+}
+
+
+Web is so popular
+why js is so popular
+
+json
+
+language -> JSON ->  JavaScript object notation -> language of web 
+all data -> travel in json form
+json -> a object that is written like string 
+"{key:value,key1:vaule,}"
+
+
+frontend -> backend -> database
+
+
+
+
+Array:-> array is a box []
+
+let name = ['Aman','Tushar','akansha','Akhil','mayank']
+
+at each pos.. there is a unique value known as index
+this index start from 0 upto the length of array -1
+
+Array is a basic data structure ->
+
+Array advantages
+
+retrive the value by using index value
+all the data is stored in linear manar
+
+
+
+Assignment operators
+=     LHS=RHS 
++  to add two values , to concate
+-
+* multiply
+/ divide
+6/2 = 3
+modules
+7 % 3 = 1
+
+
+2^3 = 8
+
+pre 
+++1 = 1
+
+--1 = 1
+
+post 
+++
+ex- 1++ = 2
+--
+ex - 1-- = 0
+
+Logical
+
+and  -> &&
+OR  -> ||
+compare -> ===,==
+Not -> !=
+greater and greater than -> > ,>=
+less and lest than equal -> < , <=
+
+
+
+variable making 
+datatypes
+let , var, const
+
+condition render;
+
+as if
+
+
+10 > 7 -> true 
+10 == '10' -> true
+value check 
+lose compare
+
+10 === '10' -> false
+value check And type check of data types 
+strict compare
+
+
+let x = 10;
+let y = 12;
+if(x >= y){
+    console.log(x);
+}
+else{
+    console.log(y)
+}
+
+
+
+if(condition){
+}
+else if(){
+}
+else{
+}
+
+
+Switch case
+
+
+Looping
+
+print 10 times name -> tushar 
+DRY -> do not repeat yourself ->
+console.log('Tushar')
+for repeated task 
+
+
+types of loops
+
+for loop
+variable making , condition , operator
+
+syntax for loop
+
+
+for(x = 0,x>9,x++){
+
+}
+
+
+var value x = 0,check the condition [ body will work] x = 1
+
+
+
+
+while loop
+
+do while loop
+
+
+foreach loop
+
+forof , forin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

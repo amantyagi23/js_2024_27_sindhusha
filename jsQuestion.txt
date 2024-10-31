@@ -1,0 +1,57 @@
+Questions
+
+1. Wap to convert temp to celsius from fahrenheit
+77f = 'celsius
+formula =  5/9 *( temp -32);
+using function 1 parameter =  temp 
+log
+99 100 102 =  32 33 34
+
+
+reverse celsius convert fahrenheit
+
+2. Wap to check which no. is greater then among 3 number
+
+a = 
+b = 
+c = 
+
+
+3 Wap to check is age is 18 plus or not
+ var age =   
+
+4. WAP to check year is a year is greater the 2000 or not ?
+
+5. wap to check number is even or odd ? 
+
+6. Wap a fissbuss program 
+if( number is divide by 3 ) then it is a fiss
+if( number is divide by 5 ) the number is buss
+else all are fissbuss
+
+7. WAP to check the which operation is to preform 
+
+1. if( a is zero then print zero and soon)
+like if a is 3 then print three upto 0-9 and else not valid number
+
+
+8 > wap to check the week days 
+ex = 0 = sunday
+1 = monday
+2
+3
+4
+5
+6 =  sat
+
+9. wap to display greet message If time is less than 10:00 AM, 
+create a "Good morning" greeting,
+if not, 
+but time is less than 12:00PM, create a "Good day" greeting, 
+time is less than 07:00PM a "Good evening",
+time is less than 12:00AM a "Good Night",
+
+10 Check if a number is odd or even in JavaScript
+Function `isEvenOrOdd()` checks if input number is even or odd by using “%” operator in JavaScript.
+Print “Number is even” if the number is divisible by 2.
+Else print “Number is odd” if the number returns a remainder when divided by 2.
