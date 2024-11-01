@@ -1,0 +1,10 @@
+Day-4 
+
+Input in javascript ->
+
+Html -> input use form 
+
+by using js own function
+1.prompt -> to take input 
+2.confirm -> 
+3.alert -> alert message

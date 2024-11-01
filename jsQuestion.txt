@@ -17,10 +17,10 @@ b =
 c = 
 
 
-3 Wap to check is age is 18 plus or not
+3 Wap to check the age is 18 plus or not
  var age =   
 
-4. WAP to check year is a year is greater the 2000 or not ?
+4. WAP to check the given year is greater the 2000 or not ?
 
 5. wap to check number is even or odd ? 
 
@@ -33,6 +33,9 @@ else all are fissbuss
 
 1. if( a is zero then print zero and soon)
 like if a is 3 then print three upto 0-9 and else not valid number
+
+switch
+ifelse
 
 
 8 > wap to check the week days 
@@ -55,3 +58,15 @@ time is less than 12:00AM a "Good Night",
 Function `isEvenOrOdd()` checks if input number is even or odd by using “%” operator in JavaScript.
 Print “Number is even” if the number is divisible by 2.
 Else print “Number is odd” if the number returns a remainder when divided by 2.
+
+
+
+
+11 WAP to check number is even or odd from 0 to 100;
+12 Wap to print the table of given number (1 to 10);
+ex:-
+2X1=2
+2X2=4
+2X3=6
+
+
