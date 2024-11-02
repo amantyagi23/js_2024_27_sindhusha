@@ -1,0 +1,89 @@
+Day-5
+
+String template , literal
+
+syntax = `hello ${variable}`
+ console.log(a,"X",x,"=",)
+
+
+
+function
+
+block of code 
+
+
+
+
+add two numbers 
+
+
+x = 10;
+y = 20;
+z = x+y;
+console.log(z);
+
+60 ,40
+
+funt(){
+hrgaiels
+}
+khfbke error
+bkksj
+
+
+
+types of function
+
+Normal Type
+
+syntax:- function funcName(parameters){
+			// body of a function 
+
+			return true 
+			}
+
+
+fun(a,c,b){
+console.log(a);
+}
+
+fun(10,12)
+
+
+
+Pure Function
+Arrow function
+single line function
+const funName = (params)=>{
+return [1,2,3,4,5,6]
+}
+
+
+var vs let 
+
+
+object function
+
+
+console.log()
+
+
+
+const console = {
+log : function (params){
+// body 
+}
+}
+
+
+return number
+
+
+
+t
+
+
+
+
+
+
