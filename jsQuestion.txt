@@ -70,3 +70,99 @@ ex:-
 2X3=6
 
 
+13 WAP to check weather a number is even or odd by using function
+
+
+
+Check if input variable is a number or not
+Function `isNumber()` checks if input variable is a number by using isNaN() 
+
+Print “Variable is not a number” if isNaN() returns true.
+Else print “Variable is a valid number” if isNaN() returns false.
+
+11. Find the largest of two number
+Function `findLargest()` finds the largest between two number by using “>” and “=” operator in JavaScript.
+
+Print num1 is the largest if num1>num2.
+Print num2 is the largest if num1<num2.
+Else print num1 and num2 are equal when num1==num2.
+
+12.  Find the largest of three number
+Function `findLargest()` finds the largest of three number by using “>” and “&&” operator in JavaScript.
+
+Print num1 is the largest if num1>num2 and num1>num3.
+Print num2 is the largest if num2<num3.
+Else print num3.
+
+13. find the grade for input marks
+Function `findGrade()` to find the grade of the student based on the input marks.
+
+Print “S grade” if marks is between 90 and 100.
+Print “A grade” if marks is between 80 and 90.
+Print “B grade” if marks is between 70 and 80.
+Print “C grade” if marks is between 60 and 70.
+Print “D grade” if marks is between 50 and 60.
+Print “E grade” if marks is between 40 and 50.
+Print “Student has failed” if marks is between 0 and 40.
+Else print “Invalid marks”.
+
+
+14. WAP to create a calculator using switch case in which
+var  a = 2;
+
+if choose  is 1 then add two value operators
+if choose  is 2 then subtaction two value
+if choose  is 3 then multiply two value
+if choose  is 4 then divide two value
+if choose  is 5 then modules two value
+
+
+15 > wap to check the week days using switch case 
+ex = 0 = sunday
+1 = monday
+2
+3
+4
+5
+6 =  sat
+
+16. WAP to print 1 to 10 using for loop.
+17. WAP to print multiple of 2's up to 10 times
+
+ 2
+ 4
+ 6
+ 8
+ 10
+ 12
+ 14
+ 16
+ 18
+ 20
+17. Wap to print and check whic no. even no. upto n = 100
+18. WAP to print odd no upto n = 100
+19. WAP to print table of 5x1 = 5 using for loop 
+
+// While loop
+
+21. write a program to print 1 to 20 number using while loop..
+22. write a program to print even number up to 100 using while loop;
+WAP to print multiple of 2's up to 10 times
+
+ 2
+ 4
+ 6
+ 8
+ 10
+ 12
+ 14
+ 16
+ 18
+ 20
+
+ wap to print digit count of a given digit using while loop 
+ ex-> n = 56781176
+ digitcount = 8
+
+
+
