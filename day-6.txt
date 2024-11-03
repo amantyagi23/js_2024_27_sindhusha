@@ -1,0 +1,63 @@
+day-6
+
+in javascript 
+
+Dynamic behavier
+
+
+DOM -> document object model
+
+everything in html is a document 
+
+document create tree 
+
+
+HTML -> browser -> JIT (just in time)
+js -> 
+
+js -> DOM -> all the document create tree ->
+
+html
+
+-> head
+-> body ->navbar 
+		-> div
+	-> main
+	-> footer  
+
+
+
+in js -> CRUD -> create , Read , Update , delete 
+
+ 
+
+
+
+Fetch 
+
+-> Async And Sync
+-> Fetch 
+-> get and Post 
+-> Class 
+-> Model 
+
+
+
+getElementByID
+createElement
+InnerText 
+InnerHtml
+
+
+index.html
+create Button 
+buttonClick change the text
+button text
+
+
+
+press Me -> Click me
+
+
+
+
