@@ -1,0 +1,74 @@
+Async vs Sync
+
+
+Sync -> 
+line by line
+1.line ->
+2.line ->
+
+
+web 
+frontend client  -> backend-> server side -> database 
+API -> call
+
+
+async
+
+it depends on data fetch 
+
+let response = async getDataFromBackend()  // 5s
+getdata = response ;
+console.log(response);
+
+
+
+
+
+Fetch("Address",headers) 
+
+get,-> To get the data or search some data(reciving)
+post, -> create (sending)
+put, get and update ()
+delete,and send information index 6
+
+CRUD
+
+post call
+login 
+
+
+fetch that get data from backend 
+
+
+[1,2,3,4,5,6,8,987,7,4,2,1]
+
+
+
+
+
+pizzahut
+
+order -> pay -> $100 -> slip -> promise ->
+order number -> 37 
+get pizza 
+
+
+web server -> database->
+
+Request -> fetch call 
+ promise -> i will send data -> it has to be search on database
+
+pending request 
+fulfilled request
+Reject request 
+ 
+Response -> 
+
+
+
+await-> 
+
+ 
+
+
+
