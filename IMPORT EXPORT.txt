@@ -1,0 +1,24 @@
+IMPORT EXPORT
+
+scope
+console.log -> global scope
+
+
+we.get - > local
+
+
+2015
+-> ES6 
+
+file1
+payment function 
+
+1950 
+
+file2
+account function 
+
+
+
+
+

@@ -55,18 +55,43 @@ get pizza
 
 web server -> database->
 
-Request -> fetch call 
+client thing Request -> fetch call 
  promise -> i will send data -> it has to be search on database
 
 pending request 
 fulfilled request
 Reject request 
  
-Response -> 
+server thing Response -> 
 
 
 
+async -> 
 await-> 
+
+.then/catch-> 
+
+await->
+async wait 
+wait until when the data is camed
+
+
+
+
+line1
+async line2
+line3
+
+
+Web site - >
+
+
+
+frontend -> view 
+-> get data we need API-> Application programming Interface
+
+
+-> backend (server)
 
  
 
