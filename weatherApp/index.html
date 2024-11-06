@@ -10,8 +10,8 @@
   <body>
     <div class="weather">
       <div class="search-bar">
-        <input type="text" placeholder="Search" />
-        <button>
+        <input type="text" placeholder="Search" id="input" />
+        <button id="getSearchData">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="36"
@@ -30,8 +30,8 @@
         </button>
       </div>
       <img src="{weather_icon}" alt="" class="weather-icon" />
-      <p class="temperature">22°c</p>
-      <p class="location">New York</p>
+      <p class="temperature" id="temperature">22°c</p>
+      <p class="location" id="location">New York</p>
       <div class="weather-data">
         <div class="col">
           <img src="{humidity_icon}" alt="" />
@@ -44,7 +44,7 @@
           <div class="col">
             <img src="{wind_icon}" alt="" />
             <div>
-              <p>18 km/h</p>
+              <p id="windSpeed">18 km/h</p>
               <span>Wind Speed</span>
             </div>
           </div>
