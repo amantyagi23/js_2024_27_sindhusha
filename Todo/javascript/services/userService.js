@@ -1,8 +1,12 @@
+import User from "../model/userModel.js";
 
 const USERSERVICE = {
 
-    createUser:function(){
-
+    uuid:0,
+    userList : [],
+    createUser:function(rawData){
+        const user = new User(this.createUUID(),rawData.firstName,rawData.lastName,rawData.dob,rawData.phoneNumber,rawData.address);
+        this.userList.push(user);
     },
     updateUser:function(){
 
@@ -11,8 +15,15 @@ const USERSERVICE = {
 
     },
     getUsers:function(){
-        
+        return this.userList;
+    },
+    createUUID:function(){
+        this.uuid = this.uuid +1
+        return this.uuid;
     }
+
 
     
 }
+
+export default USERSERVICE;

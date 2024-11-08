@@ -1,11 +1,11 @@
 class User{
     constructor(id,firstName,lastName,dob,phoneNumber,address){
-        id = id;
-        firstName = firstName;
-        lastName = lastName;
-        dob = dob
-        phoneNumber = phoneNumber
-        address = address
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob
+        this.phoneNumber = phoneNumber
+        this.address = address
     }
 }
 
