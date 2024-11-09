@@ -17,12 +17,13 @@ function showForm(){
 function getDataForm(event){
     event.preventDefault()
     const rawData = {
-        firstName : event.target[0].value,
+        firstName : validateFirstName(event.target[0].value),
         lastName : event.target[1].value,
         dob: event.target[2].value,
         phoneNumber : event.target[3].value,
         address : event.target[4].value,
     }
+
     
     USERSERVICE.createUser(rawData)
     printData();
@@ -62,5 +63,14 @@ function printData(){
        tbody.appendChild(tr);
     }
 
+}
+
+
+function validateFirstName(name){
+    if(name ===undefined || name === null || name === ""){
+        alert("Please Provide a name");
+        return
+    }
+    return name
 }
 
