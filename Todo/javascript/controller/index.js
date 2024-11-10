@@ -16,16 +16,22 @@ function showForm(){
 
 function getDataForm(event){
     event.preventDefault()
+    if(validateFirstName(event.target[0].value) === false){
+        return
+    }
     const rawData = {
-        firstName : validateFirstName(event.target[0].value),
+        firstName : event.target[0].value,
         lastName : event.target[1].value,
         dob: event.target[2].value,
         phoneNumber : event.target[3].value,
         address : event.target[4].value,
     }
 
-    
-    USERSERVICE.createUser(rawData)
+  for (let i = 0; i < 5; i++) {
+    event.target[i].value = ""
+  }
+  showForm()
+  USERSERVICE.createUser(rawData);
     printData();
 }
 
@@ -59,6 +65,21 @@ function printData(){
        const addressTd = document.createElement("td");
        addressTd.innerText = userList[i].address
        tr.appendChild(addressTd);
+       const updateUserBtn = document.createElement("button")
+       updateUserBtn.innerText = "Update"
+       updateUserBtn.setAttribute("id",userList[i].id)
+       updateUserBtn.addEventListener("click",updateUser)
+       const deleteUserBtn = document.createElement("button")
+       deleteUserBtn.innerText = "Delete"
+       deleteUserBtn.setAttribute("id",userList[i].id)
+       deleteUserBtn.addEventListener("click",deleteUser);
+       const operationtd = document.createElement("td");
+       
+       operationtd.appendChild(updateUserBtn);
+       operationtd.appendChild(deleteUserBtn);
+       tr.appendChild(operationtd);
+
+      
         
        tbody.appendChild(tr);
     }
@@ -69,8 +90,29 @@ function printData(){
 function validateFirstName(name){
     if(name ===undefined || name === null || name === ""){
         alert("Please Provide a name");
-        return
+        return false
     }
-    return name
+    return true
 }
 
+
+
+function updateUser(){
+    const id = this.getAttribute("id")
+    const user = USERSERVICE.getUserByUUID(id);
+    showForm();
+    document.getElementById("firstName").value = user.firstName
+    document.getElementById("lastName").value = user.lastName
+    document.getElementById("dob").value = user.dob
+    document.getElementById("phoneNumber").value = user.phoneNumber
+    document.getElementById("address").value = user.address
+    console.log(user);
+}
+
+
+function deleteUser(){
+    const id = this.getAttribute("id");
+
+    USERSERVICE.deleteUser(id);
+    printData()
+}
