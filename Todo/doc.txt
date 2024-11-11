@@ -18,3 +18,15 @@ stur
 
 getDatafrom html in controller folder(index.js)
 -> send the data to userservices -> create data according to the user model or class
+
+
+
+DOM -> document object model
+
+oops -> js --> oojs
+
+BOM ->  browser object model
+
+localstorge some data in the browser or tab
+tab -> 
+navigation

@@ -3,6 +3,8 @@ import USERSERVICE from "../services/userService.js";
 window.addEventListener("DOMContentLoaded",events)
 
 function events(){
+    USERSERVICE.getDataFromLocalStorage();
+    printData();
     document.getElementById("addBtn").addEventListener("click",showForm)
     document.getElementById("details").addEventListener("submit",getDataForm);
 }
@@ -19,6 +21,11 @@ function getDataForm(event){
     if(validateFirstName(event.target[0].value) === false){
         return
     }
+    console.log(event);
+    const userId = document.getElementById("details").getAttribute("userId");
+    console.log(userId);
+    
+    
     const rawData = {
         firstName : event.target[0].value,
         lastName : event.target[1].value,
@@ -31,7 +38,13 @@ function getDataForm(event){
     event.target[i].value = ""
   }
   showForm()
-  USERSERVICE.createUser(rawData);
+  if(userId === null){
+    USERSERVICE.createUser(rawData);
+  }
+  else{
+    USERSERVICE.updateUser(userId,rawData);
+  }
+  document.getElementById("details").removeAttribute("userId");
     printData();
 }
 
@@ -79,8 +92,6 @@ function printData(){
        operationtd.appendChild(deleteUserBtn);
        tr.appendChild(operationtd);
 
-      
-        
        tbody.appendChild(tr);
     }
 
@@ -97,10 +108,19 @@ function validateFirstName(name){
 
 
 
+// update -> delete old add new 
+
+// we can create new form update 
+
+// when we update store the id somewhere in html 
+
+// delete 
+
 function updateUser(){
     const id = this.getAttribute("id")
     const user = USERSERVICE.getUserByUUID(id);
     showForm();
+    document.getElementById("details").setAttribute("userID",user.id)
     document.getElementById("firstName").value = user.firstName
     document.getElementById("lastName").value = user.lastName
     document.getElementById("dob").value = user.dob
@@ -116,3 +136,7 @@ function deleteUser(){
     USERSERVICE.deleteUser(id);
     printData()
 }
+
+
+
+// Crud - user
