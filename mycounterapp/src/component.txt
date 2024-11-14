@@ -1,0 +1,93 @@
+Component is like a function 
+short code that can be reused 
+
+in js 
+
+every fun.. can return 
+number 
+string 
+
+
+In react we can return a html code 
+
+
+
+every component have return something
+
+
+type of function used in reactjs 
+
+Normal function
+syntax
+export default function App() {
+  return (
+    <div>
+    <h2>
+        Hello React js
+    </h2>
+</div>
+
+  )
+}
+
+
+
+Pure function
+const App = () =>{
+    return (<>
+    {html code}
+    </>)
+}
+
+
+
+simple project 
+
+Counter App
+
+three buttons 
+value = 0
+
+
+ increase 
+ reset 
+ descrese
+
+
+
+ state
+
+ running 
+ stop 
+
+
+ Hooks 
+
+
+useState -> Hook
+
+state of a components
+
+
+useeffect ->
+
+
+
+
+
+
+useRef
+
+
+useContext
+
+
+useReducer
+
+
+useCallBack
+
+
+
+
+
