@@ -2,10 +2,13 @@ import { useState } from "react"
 import CreateTodo from "./CreateToDo"
 import SearchTodo from "./SearchTodo"
 import ShowTodoList from "./ShowTodoList"
+import { fakeData } from "../fakeData"
+
 
 
 const Todo = () => {
-  const [todoList, setTodoList] = useState([]);
+  
+  const [todoList, setTodoList] = useState(fakeData);
   console.log(todoList);
   
   return (
@@ -14,7 +17,7 @@ const Todo = () => {
             <SearchTodo/>
             <CreateTodo setTodoList={setTodoList} todoList={todoList}/>
         </div>
-        <ShowTodoList todoList={todoList}/>
+        <ShowTodoList todoList={todoList} setTodoList= {setTodoList}/>
     </div>
   )
 }

@@ -14,11 +14,10 @@
 }
 
 body {
-  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  width: 90%;
   position: relative;
+  margin: 0;
 }
 
 h1 {
@@ -65,10 +64,47 @@ button:focus-visible {
 }
 
 .todoForm {
-  display: block;
   position: absolute;
   padding: 30px;
   top: 30%;
-  left: 45%;
-  background-color: #747bff;
+  left: 50%;
+  right: 50%;
+  width: 300px;
+  background-color: #e4e6ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.grid div {
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.height {
+  width: 90%;
+  margin: 60px auto;
+}
+
+.searchInput {
+  width: 450px;
+  padding: 12px;
+  font-size: larger;
+  border-radius: 12px;
+}
+
+form input {
+  padding: 12px;
+  width: 90%;
+}
+form label {
+  font-size: larger;
+}
+
+form textarea {
+  width: 100%;
 }

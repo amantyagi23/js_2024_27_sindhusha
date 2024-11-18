@@ -1,8 +1,12 @@
 import React from 'react'
 
-const UpdateTodo = () => {
+const UpdateTodo = ({id,setTodoList,todoList}) => {
+
+  const updateTodo = ()=>{
+
+  }
   return (
-    <div>UpdateTodo</div>
+    <div><button>Update</button></div>
   )
 }
 

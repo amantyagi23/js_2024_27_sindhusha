@@ -2,7 +2,9 @@ import React from 'react'
 
 const SearchTodo = () => {
   return (
-    <div>SearchTodo</div>
+    <div>
+      <input className='searchInput' placeholder='Enter Title' />
+    </div>
   )
 }
 

@@ -6,7 +6,10 @@ const App = () => {
   return (
     <>
     <Navbar/>
+    <div className='height'>
     <Todo/>
+    </div>
+    
     </>
   )
 }

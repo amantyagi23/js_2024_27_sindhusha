@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { v4 as uuidv4 } from 'uuid';
 
 const TodoForm = ({todoList,setTodoList}) => {
 
@@ -23,8 +24,12 @@ const TodoForm = ({todoList,setTodoList}) => {
   //
 
   const submit = (data)=>{
-    console.log(data);
-    setTodoList([...todoList,data])
+  
+    const rawData = {
+      id:uuidv4(),
+      ...data
+    }
+    setTodoList([...todoList,rawData])
     reset()
     
   }
