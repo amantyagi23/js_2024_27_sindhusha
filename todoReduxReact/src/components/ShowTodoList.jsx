@@ -1,5 +1,6 @@
 import DeleteTodo from './DeleteTodo'
 import { useSelector } from 'react-redux'
+import UpdateTodo from './UpdateTodo'
 
 const ShowTodoList = () => {
   const todoList =  useSelector((state)=>state.todos)
@@ -7,7 +8,7 @@ const ShowTodoList = () => {
    <>
    <div className='grid'>
     {todoList.map((item)=> <div key={item.id}>
-      <div><button>Update</button> <DeleteTodo  id={item.id}/></div>
+      <div><UpdateTodo id={item.id}/> <DeleteTodo  id={item.id}/></div>
       <h2>{item.title}</h2>
       <p>{item.description}</p>
        </div>)}

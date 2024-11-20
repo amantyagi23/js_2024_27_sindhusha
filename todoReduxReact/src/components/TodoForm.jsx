@@ -2,20 +2,34 @@
 import { useForm } from 'react-hook-form'
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addTodo } from '../redux/todoSlice';
+import { addTodo, updateTodo } from '../redux/todoSlice';
 
-const TodoForm = () => {
+const TodoForm = ({todoData}) => {
 
   const dispatch  =  useDispatch()
-  const  {register,handleSubmit,reset} = useForm()
+  const  {register,handleSubmit,reset} = useForm(
+    {defaultValues:{title:todoData?todoData.title :"",
+      description:todoData?todoData.description:""
+    }}
+  )
   const submit = (data)=>{
+
+    if(todoData !==undefined){
+      const rawData = {
+        id:todoData.id,
+        ...data
+      }
+      dispatch(updateTodo(rawData))
+    }
   
+   else{
     const rawData = {
       id:uuidv4(),
       ...data
     }
 
-    dispatch(addTodo(rawData))
+    dispatch(addTodo(rawData)) 
+   }
     reset()
     
   }
