@@ -68,3 +68,15 @@ button:focus-visible {
 img {
   width: 100%;
 }
+
+.grid {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 20px;
+}
+
+.grid .card:hover {
+  transform: scale(1.11);
+  transition: 1.2s;
+}

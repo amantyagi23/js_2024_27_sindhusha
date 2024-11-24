@@ -149,3 +149,11 @@ axios.post
 
 // deps -> refetch
 
+
+we need data of movies 
+
+in Frontend we always request a APIs
+
+
+for movies -> TMDB
+
