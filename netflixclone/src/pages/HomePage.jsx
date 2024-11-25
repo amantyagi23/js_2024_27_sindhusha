@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { getMoviesData } from '../modules/movies/services'
 import APIURL from '../config'
 import ShowMovie from '../modules/movies/components/ShowMovie';
+import NavBar from "../shared/components/NavBar"
 
 const HomePage = () => {
 
@@ -10,8 +11,6 @@ const HomePage = () => {
 
   useEffect(()=>{
     getMoviesData(APIURL.getPopularMoviesURL).then((response)=>{
-
-      console.log(response);
       setPopularMovie(response.data.results)
       
     }).catch((error)=>{
@@ -21,7 +20,7 @@ const HomePage = () => {
 
     getMoviesData(APIURL.getNowPlayingMoviesURL).then((response)=>{
 
-      console.log(response);
+
       setNowPlayingMovie(response.data.results)
       
     }).catch((error)=>{
@@ -32,6 +31,7 @@ const HomePage = () => {
 
   return (
     <div>
+      <NavBar/>
       <ShowMovie movies={nowPlayingMovie} title={"Now Playing Movies"}/>
       <ShowMovie movies={popularMovie} title={"Popular Movies"}/>
     </div>

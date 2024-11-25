@@ -88,8 +88,8 @@ const  NavBar = () => {
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
+              display:"none",
               mr: 2,
-              
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,

@@ -157,3 +157,21 @@ in Frontend we always request a APIs
 
 for movies -> TMDB
 
+we display movie banner
+
+but we need to show movies details 
+
+but react is a single page application
+
+
+
+React is spa
+
+we create ilusions
+
+like we maintain components according to need 
+
+
+
+if
+else
