@@ -6,6 +6,9 @@ const APIURL = {
     getNowPlayingMoviesURL:`https://api.themoviedb.org/3/movie/now_playing?${APIKEY}`,
     getMovieDetailsById:function (movieId){
         return `https://api.themoviedb.org/3/movie/${movieId}?${APIKEY}`
+    },
+    getMoviesVideosByMovieId:function(movieId){
+        return `https://api.themoviedb.org/3/movie/${movieId}/videos?${APIKEY}`
     }
 }
 

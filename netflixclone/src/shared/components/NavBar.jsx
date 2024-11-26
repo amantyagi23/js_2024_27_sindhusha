@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { user } from '../../modules/users/services/userService';
 
 const pages = ['Home', 'Tv Shows', 'Movies','New & Popular','My List', 'Browser My Language'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -111,7 +112,7 @@ const  NavBar = () => {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+         {user !==null ?  <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -139,7 +140,7 @@ const  NavBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box>:<><Button href='/login'>Login</Button></>}
         </Toolbar>
       </Container>
     </AppBar>

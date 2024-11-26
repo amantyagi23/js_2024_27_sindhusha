@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import MovieDetailPage from './pages/MovieDetailPage'
 import { BrowserRouter, Route, Routes } from 'react-router'
+import AuthenticatedRoutes from './shared/routes/AuthenticatedRoutes'
 
 const App = () => {
 
@@ -26,12 +27,16 @@ const App = () => {
   //   </div>)
   // }
 
+  // <html>
+  //   <head></head>
+  // </html>
+
     return (
       <BrowserRouter>
 
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/movie_details/:id' element= {<MovieDetailPage/>}/>
+        <Route path='/movie_details/:id' element= {<AuthenticatedRoutes><MovieDetailPage/></AuthenticatedRoutes>}/>
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='*' element={<h1>Not Found Page</h1>}/>
       </Routes>
