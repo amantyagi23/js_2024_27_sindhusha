@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 
-import { user } from "../../modules/users/services/userService"
+import { useAuth } from "../../provider/AuthProvider"
 
 const AuthenticatedRoutes = ({ children }) => {
-    
-    if (user !== null) {
+    const {isAuth} = useAuth()
+    if (isAuth()===true) {
         return <>{children}</>
     }
     return (

@@ -12,12 +12,14 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { user } from '../../modules/users/services/userService';
+
+import { useAuth } from '../../provider/AuthProvider';
 
 const pages = ['Home', 'Tv Shows', 'Movies','New & Popular','My List', 'Browser My Language'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
 
 const  NavBar = () => {
+  const {isAuth,user,logout} = useAuth()
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -112,10 +114,10 @@ const  NavBar = () => {
               </Button>
             ))}
           </Box>
-         {user !==null ?  <Box sx={{ flexGrow: 0 }}>
+         { isAuth()?  <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt={user.email} src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -134,11 +136,15 @@ const  NavBar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
+              
+                <MenuItem  onClick={handleCloseUserMenu}>
+                  <Typography sx={{ textAlign: 'center' }}>Profile</Typography>
                 </MenuItem>
-              ))}
+
+                <MenuItem  onClick={logout}>
+                  <Typography sx={{ textAlign: 'center' }}>Logout</Typography>
+                </MenuItem>
+            
             </Menu>
           </Box>:<><Button href='/login'>Login</Button></>}
         </Toolbar>

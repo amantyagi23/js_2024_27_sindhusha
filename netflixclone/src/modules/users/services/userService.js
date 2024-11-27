@@ -1,9 +1,11 @@
 
 // export const user = null;
-
-export const user = {
-    email:"amantyagi4987@gmail.com",
-    name:"Aman Tyagi",
-    token:"bfkjrebskvbserkjgbetgjbg;kje"
-}
 // redux or contextApi
+
+// redux is store
+// where we manage the satates of things 
+// store 
+// provider 
+// redux -> createSlice
+
+// contextAPI- usestate -> state manage 
